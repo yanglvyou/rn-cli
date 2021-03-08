@@ -7,7 +7,15 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "pod:install": "cd ios && pod install && cd ..",
+    "clean:android": "cd android/ && ./gradlew clean && cd .. && react-native run-android",
+    "clean:build": "cd android/ && ./gradlew clean &&  ./gradlew assembleRelease",
+    "clean-android-bundle": "rm -rf ./bundles/android/*",
+    "android:build": "cd android && ./gradlew assembleRelease",
+    "android:bundle": "cd android && ./gradlew bundleRelease",
+    "android:install": "cd android && ./gradlew assembleRelease && ./gradlew installRelease",
+    "clean-ios-bundle": "rm -rf ./bundles/ios/*"
   },
   "dependencies": {
     "react": "16.13.1",

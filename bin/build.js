@@ -47,7 +47,7 @@ const build = (appName) => {
   console.log('----------------------------------------------------------');
   figlet.text('React Native', {
     font: 'Graffiti'
-  }, function(err, data) {
+  }, function (err, data) {
     if (err) {
       console.log(chalk.white.bold('React Native'));
     } else {
@@ -58,20 +58,13 @@ const build = (appName) => {
     console.log('----------------------------------------------------------');
     cd(appName);
     installPackages().then(() => {
-      console.log(chalk.white.bold('Let\'s get started'));
-      console.log(chalk.green('Step 1: cd into the newly created ' + appName + ' directory'));
-      console.log('----------------------------------------------------------');
-      console.log(chalk.white.bold('For React Native'));
-      console.log(chalk.green('Step 1. run npm run rn-watch'));
-      console.log(chalk.black.bold('This compiles the TypeScript code and recompiles it whenever any files are changed.'));
-      console.log(chalk.green('Step 2. run npm start'));
-      console.log(chalk.black.bold('This starts the React Native Packager.'));
+      console.log(chalk.green('恭喜！！！项目创建成功'));
       console.log('----------------------------------------------------------');
     })
-    .catch(error => {
-      console.log(chalk.red('An unexpected error occurred'))
-      console.log(chalk.red(error));
-    });
+      .catch(error => {
+        console.log(chalk.red('An unexpected error occurred'))
+        console.log(chalk.red(error));
+      });
   });
 }
 
