@@ -1,0 +1,6 @@
+module Pods_RNTSProject {
+  umbrella header "Pods-RNTSProject-umbrella.h"
+
+  export *
+  module * { export * }
+}

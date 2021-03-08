@@ -1,0 +1,1 @@
+### npx react-native-rename <newName> 修改项目名

@@ -20,5 +20,5 @@ program
 if (program.args.length > 0) {
     build(program.args[0]);
 } else if (program.args.length < 1) {
-    console.log(chalk.red('Please supply a name for your new React XP app.'));
+    console.log(chalk.red('Please supply a name for your new React Native app.'));
 }
